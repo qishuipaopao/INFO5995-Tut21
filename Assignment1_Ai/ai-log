@@ -1,0 +1,41 @@
+AI Session Log
+
+Scope
+- This log summarizes the user-visible conversation in this session.
+- It excludes hidden system and developer instructions.
+
+Entry 1
+
+User Prompt Summary
+- Choose and set up APK decompilation tooling such as `jadx` or `apktool`.
+- Decompile `a1_case1.apk`.
+- Confirm access to the package name, main activity, manifest, and at least one login or registration class.
+
+Assistant Response Summary
+- Inspected the workspace and confirmed `a1_case1.apk` was present.
+- Checked for installed tooling and found that `jadx` and `apktool` were not already available.
+- Downloaded and set up local copies of `jadx 1.5.3` and `apktool 2.12.1` inside the workspace.
+- Decompiled the APK with both tools:
+  - `jadx` for readable Java source
+  - `apktool` for decoded manifest and resources
+- Created `DECOMPILATION.md` documenting the commands, outputs, and verified findings.
+
+Validation
+- Tooling present:
+  - `tools/jadx-1.5.3/`
+  - `tools/apktool_2.12.1.jar`
+- Decompiled output present:
+  - `decompiled/jadx/a1_case1/`
+  - `decompiled/apktool/a1_case1/`
+- Package name confirmed: `com.example.mastg_test0016`
+- Main activity confirmed: `com.example.mastg_test0016.MainActivity`
+- Manifest confirmed:
+  - `decompiled/apktool/a1_case1/AndroidManifest.xml`
+  - `decompiled/jadx/a1_case1/resources/AndroidManifest.xml`
+- Login or registration classes confirmed:
+  - `decompiled/jadx/a1_case1/sources/com/example/mastg_test0016/Login.java`
+  - `decompiled/jadx/a1_case1/sources/com/example/mastg_test0016/MainActivity.java`
+- Supporting summary present in:
+  - `DECOMPILATION.md`
+
+

@@ -1,0 +1,3 @@
+An APK (Android Package Kit) is the installation package format for Android applications. It contains all the content required for an application to run and is used to install and run applications on the Android system.
+
+The reason for decompiling for auditing is that the code in an APK is compiled and packaged, and is in machine language that is not easily read. By decompiling, it can be restored to a programming language that humans can understand, thereby allowing analysis of the application's structure, logic, permission usage, and whether there are security vulnerabilities or malicious behaviors.
