@@ -1,0 +1,59 @@
+AI-Log
+Entry 1 – Understanding APK and Decompilation
+
+Prompt:
+Asked AI to explain what an APK file is and why decompilation is necessary for security analysis.
+
+AI Output Summary:
+AI explained that an APK is a packaged Android application containing compiled code and resources. It also explained that decompilation allows analysts to access source-like code, making it possible to inspect application logic and identify potential vulnerabilities.
+
+Validation:
+The explanation was cross-checked with lecture materials and confirmed to be consistent with course concepts. The use of JADX further supported this, as it produced readable Java code from the APK, validating the explanation provided by AI.
+
+Entry 2 – Tool Selection and Setup
+
+Prompt:
+Asked AI which tools are suitable for APK decompilation and how to set them up.
+
+AI Output Summary:
+AI suggested using jadx for generating readable Java code and apktool for decoding resources and the AndroidManifest.xml file. It also provided general setup guidance.
+
+Validation:
+Both tools were successfully used to decompile the APK. The outputs included readable Java source files and a decoded manifest file, confirming that the suggested tools were appropriate. The results were consistent with expected Android project structures.
+
+Entry 3 – App Structure Identification
+
+Prompt:
+Asked AI how to locate key components such as package name, main activity, and login-related classes after decompilation.
+
+AI Output Summary:
+AI explained how to inspect the AndroidManifest.xml file to identify the package name and main activity, and how to navigate source directories to locate relevant classes such as login or registration components.
+
+Validation:
+These steps were followed and successfully applied. The identified components matched the expected structure of an Android application. The presence of login-related classes confirmed that the app logic could be further analysed for security issues.
+
+Entry 4 – Vulnerability Analysis
+
+Prompt:
+Asked AI to evaluate whether using java.util.Random is secure for generating session tokens.
+
+AI Output Summary:
+AI explained that java.util.Random is not suitable for security-sensitive purposes because its outputs can be predictable, especially if the seed is known or inferred.
+
+Validation:
+This claim was verified using external references such as Java documentation and security guidelines. The use of java.util.Random in authentication-related logic was therefore considered a valid vulnerability, as it may allow attackers to predict or reproduce session tokens.
+
+Entry 5 – Writing and Structuring the Report
+
+Prompt:
+Asked AI to help structure sections of the report and improve clarity of explanations.
+
+AI Output Summary:
+AI provided suggested structures and draft text for sections such as the system model and vulnerability explanation.
+
+Validation:
+All AI-generated content was manually reviewed and edited to ensure technical accuracy and consistency with the actual findings from the decompiled code. Any unclear or unsupported statements were removed or rewritten.
+
+Final Note
+
+All AI-generated outputs were critically reviewed and validated against actual code, course materials, and external references before being included in this assignment.
